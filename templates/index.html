@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Song Search</title>
+</head>
+<body>
+    <h1>Spotify Song Search</h1>
+    <p> This search recommend songs based on energy level of your input song.</p>
+    <p> PLEASE ENTER THE CORRECT SONG NAME AND SINGER FROM SPOTIFY FOR CORRECT RESULTS</p>
+    <form action="/search" method="get">
+        <label for="song_name">Song Name:</label>
+        <input type="text" id="song_name" name="song_name" required><br><br>
+        <label for="artist_name">Artist Name:</label>
+        <input type="text" id="artist_name" name="artist_name" required><br><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
