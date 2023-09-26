@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results </h1>
+    <p> Finding songs closer to your energy level...</p>
+    {% if recommended_songs %}
+        <h2>Recommended Songs:</h2>
+        <ul>
+            {% for song in recommended_songs %}
+                <li>
+                    <b>Song </b>: {{ song['Song Name'] }}<br>
+                    <b>Artist </b> {{ song['Artist'] }}<br>
+                    <b>Energy </b>: {{ song['Energy'] }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No songs matching your energy preference found.</p>
+    {% endif %}
+    <br>
+    <a href="/">Back to Search</a>
+</body>
+</html>
