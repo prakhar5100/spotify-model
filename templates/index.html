@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Spotify Song Search</title>
+  <title>Spotify Song Search</title>
+  <style>
+    #grad1
+    {
+        height: 800px;
+  background-image: linear-gradient(rgb(3, 3, 3), rgb(21, 142, 3));
+    }
+    body {
+      font-family: Mukta;
+      background-color: #fff;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+
+    form {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+          border-radius: 10px;
+
+  }
+
+    input[type="submit"] {
+        width: 100%;
+      font-family: Mukta;
+      font-size: large;
+      background-color: #0640ff;
+      color: #fff;
+      cursor: pointer;
+            border-radius: 10px;
+
+    }
+
+
+  </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
+
 </head>
-<body>
-    <h1>Spotify Song Search</h1>
-    <p> This search recommend songs based on energy level of your input song.</p>
-    <p> PLEASE ENTER THE CORRECT SONG NAME AND SINGER FROM SPOTIFY FOR CORRECT RESULTS</p>
+<body id="grad1">
+  <header>
+    <center> <img src="https://images.pexels.com/photos/18530313/pexels-photo-18530313.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="100" height="100"> </center>
+
+    <h1 style="color: #fff; font-family: Mukta; font-size: 60px ;">Spotify Song Search</h1>
+
+  </header>
+  <main>
+
+    <p style="color: #fff; font-family: Mukta, sans-serif; font-size: 30px;">This search recommends songs based on the energy level of your input song.</p>
+    <p style="color: #fff;">Please enter the correct song name and singer from Spotify for correct results.</p>
+    <div style="color: #fff; font-size: 24;">
     <form action="/search" method="get">
         <label for="song_name">Song Name:</label>
         <input type="text" id="song_name" name="song_name" required><br><br>
-        <label for="artist_name">Artist Name:</label>
-        <input type="text" id="artist_name" name="artist_name" required><br><br>
-        <input type="submit" value="Search">
+
+      <label for="artist_name">Artist Name:</label>
+      <input type="text" id="artist_name" name="artist_name" required><br><br>
+
+      <input type="submit" value="Search">
     </form>
+  </div>
+  </main>
+  <p> (Please note that some songs are not alloted with any energy value, so they may show Internal Server Error) </p>
+
+
 </body>
 </html>
