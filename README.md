@@ -14,3 +14,5 @@ The core functionality of our function involves comparing the energy difference 
 To provide a user-friendly interface, we have implemented a web application using Flask, incorporating HTML for data submission and display. This allows users to easily interact with the model through a web-based interface.
 
 For hosting the Flask application, we have opted for PythonAnywhere, which offers limited free hosting capabilities, making it accessible to a wide audience.
+
+#Prakhar Pratap Singh @prakhar5100
